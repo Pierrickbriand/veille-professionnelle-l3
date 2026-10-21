@@ -725,35 +725,35 @@ body.dashonly #dash .in{max-width:1400px;margin:0 auto;padding:clamp(20px,4vw,48
 .boot .bt-lfl{font-weight:600;font-size:14px;margin-top:6px}
 .boot .bt-lf input{width:100%;box-sizing:border-box}
 
-/* Charte « nature » (version 21) : écru, beige, kaki, chocolat ; vert et bleu en accents. */
+/* Charte Pierrick Briand : bleu marine, rose poudré, turquoise ; fonds gris clair et blancs. Commune à tous les cours et à l'application Suivi des cours, sans logo d'école. */
 :root{
-  --bg:#F7F3EA;      /* écru */
-  --card:#FFFDF8;    /* écru clair pour les champs */
-  --tint:#EDE5D6;    /* beige */
-  --ink:#2B211A;     /* chocolat très foncé */
-  --ink2:#5A4C40;    /* brun */
-  --ink3:#65574A;    /* brun clair, contraste AA sur écru */
-  --line:#D8CDBB;    /* filet sable */
-  --accent:#2F6B4F;  /* vert forêt */
-  --accent2:#2C5F7C; /* bleu lac */
-  --kaki:#6B6B3E;
-  --black:#2B211A;   /* respirations : chocolat */
+  --bg:#F3F3F6;      /* gris très clair */
+  --card:#FFFFFF;    /* blanc des cartes et des champs */
+  --tint:#F7E1E2;    /* rose poudré éclairci */
+  --ink:#1B2740;     /* bleu nuit, texte */
+  --ink2:#3F4C66;    /* bleu ardoise */
+  --ink3:#56627A;    /* gris bleu, contraste AA sur fond clair */
+  --line:#D8DCE6;    /* filet gris bleu */
+  --accent:#1F3D66;  /* bleu marine */
+  --accent2:#1D6F69; /* turquoise assombri pour le contraste */
+  --kaki:#A8425A;    /* rose profond pour les étiquettes */
+  --black:#1F3A5F;   /* respirations : bleu marine */
 }
 body{background:var(--bg)}
 a{color:var(--accent2)}
 .lab,.kick{color:var(--kaki)}
 input,textarea,select{background:var(--card);border-color:var(--line);color:var(--ink)}
 .btn{border-color:var(--ink2)}
-.slide.dark{background:var(--black);color:#F7F3EA}
-.cover h1{color:#F7F3EA}
-.cover .sub{color:#D8CDBB}
-.cover .cred{color:#C9BBA6}
-body.dk .nav{color:#C9BBA6}
-body.dk .sidebtn[aria-expanded=true]{color:#A9D4C0}
-svg .lnk2.dim{stroke:#E4DACA}
-.bnd{background:#E4DACA}
-.wf .wbar2{fill:#E4DACA}
-.ssec li.th.done .ic{background:#B9D3C5;border-color:#B9D3C5}
+.slide.dark{background:var(--black);color:#FFFFFF}
+.cover h1{color:#FFFFFF}
+.cover .sub{color:#F3BDBE}
+.cover .cred{color:#C9D3E3}
+body.dk .nav{color:#C9D3E3}
+body.dk .sidebtn[aria-expanded=true]{color:#8FD3CC}
+svg .lnk2.dim{stroke:#E3E6EE}
+.bnd{background:#E3E6EE}
+.wf .wbar2{fill:#E3E6EE}
+.ssec li.th.done .ic{background:#B7DCD8;border-color:#B7DCD8}
 pre.doc,.doc{background:var(--tint)}
 .boot{background:var(--bg)}
 .boot .bt-card,.boot input[type=text]{background:var(--card)}
@@ -763,8 +763,12 @@ pre.doc,.doc{background:var(--tint)}
 details>summary svg,.aide summary .ic{color:var(--accent2);stroke:var(--accent2)}
 #side{background:var(--card)}
 /* barre de navigation lisible sur les écrans sombres */
-body.dk .nav .lnk{color:#EADFCB}
+body.dk .nav .lnk{color:#E3E9F3}
 body.dk .nav .lnk:hover{color:#fff}
+
+/* boutons principaux turquoise */
+.actions .btn:not(.sec),#bt-go{background:var(--accent2);border-color:var(--accent2);color:#fff}
+.actions .btn:not(.sec):hover,#bt-go:hover{background:#175a55;border-color:#175a55}
 
 </style>
 <div id="boot" class="boot" hidden></div>
