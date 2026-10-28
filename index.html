@@ -874,6 +874,20 @@ body.dk .nav .lnk:hover{color:#fff}
 .ov-dix li{text-align:center;font-size:.68em;font-weight:600;padding:4px 0;border-radius:4px;background:var(--tint);color:#8A3149;font-variant-numeric:tabular-nums}
 
 </style>
+<style id="charte-atelier">
+/* Bandeau de l'Atelier du formateur (moteur v52) : couverture des pages et écran d'accueil */
+.slide.dark.cover{background:#C9E2F7;color:#2B3A63}
+.slide.dark.cover::after{content:"";position:absolute;right:6%;bottom:64px;width:min(44vh,40vw);height:min(20vh,18vw);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='150' viewBox='0 0 330 150'%3E%3Cpath d='M20 150V82a62 62 0 0 1 124 0v68z' fill='%231F3D66'/%3E%3Cpath d='M228 96l84-6 18 60H222z' fill='%235BC2B4'/%3E%3Ccircle cx='178' cy='62' r='58' fill='%23fff'/%3E%3Crect x='144' y='54' width='68' height='16' rx='8' fill='%23A8425A'/%3E%3C/svg%3E") no-repeat right bottom/contain;pointer-events:none}
+@media (max-width:700px){.slide.dark.cover::after{top:14px;bottom:auto;right:14px;width:150px;height:68px}}
+.slide.dark.cover h1{color:#1F3D66;font-weight:600}
+.slide.dark.cover .sub{color:#2B3A63}
+.slide.dark.cover .cred{color:#3F4C66}
+.slide.dark.cover :focus-visible{outline-color:#1F3D66}
+.boot{background:#EEF0F4}
+.boot .bt-in>.lab:first-child{position:relative;z-index:2}
+.boot .bt-in>h1{position:relative;z-index:1;color:#1F3D66;font-weight:600;background:#C9E2F7;box-shadow:0 0 0 100vmax #C9E2F7;clip-path:inset(-100vmax -100vmax 0 -100vmax);padding-bottom:26px;margin-bottom:12px}
+@media (min-width:760px){.boot .bt-in>h1{padding-right:320px;min-height:70px}.boot .bt-in>h1::after{content:"";position:absolute;right:0;bottom:0;width:264px;height:120px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='150' viewBox='0 0 330 150'%3E%3Cpath d='M20 150V82a62 62 0 0 1 124 0v68z' fill='%231F3D66'/%3E%3Cpath d='M228 96l84-6 18 60H222z' fill='%235BC2B4'/%3E%3Ccircle cx='178' cy='62' r='58' fill='%23fff'/%3E%3Crect x='144' y='54' width='68' height='16' rx='8' fill='%23A8425A'/%3E%3C/svg%3E") no-repeat right bottom/contain}}
+</style>
 <div id="boot" class="boot" hidden></div>
 <script>
 /** @license
